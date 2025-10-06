@@ -2,11 +2,10 @@
 Add this to your C project to extract steganographic data from a PNG image.
 Make sure to update the `png_path` and `MAGIC_HEADER` constants as needed.
 Also don't forget to include `stb_image.h` in your project.
+Uncomment VERBOSE_MODE to enable debugging through MessageBox popups
 */
 
-// Comment out this line to disable all MessageBox popups (silent mode)
 //#define VERBOSE_MODE
-
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h" // https://github.com/nothings/stb/blob/master/stb_image.h
 #include <stdio.h>
